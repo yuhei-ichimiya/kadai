@@ -6,7 +6,7 @@
   </head>
 <body>
  <h1>板ポリにテクスチャ―</h1>
- 板ポリにテクスチャ―貼ってみた<br>
+ 板ポリに<br>
  非透過と透過
  <script>
       // ページの読み込みを待つ
@@ -55,7 +55,7 @@
 
         // 木をスプライトで作成
         var textureLoader = new THREE.TextureLoader();  
-        var texture = textureLoader.load("tree0.png");
+        var texture = textureLoader.load("gazou1.png");
         const material = new THREE.SpriteMaterial({ map: texture,});
 
         // 木左
@@ -69,6 +69,11 @@
         sprite2.scale.set(1,2,1);
         sprite2.position.set(1,1,0); //位置を指定
         scene.add(sprite2);
+
+        const sprite3 = new THREE.Sprite(material);
+        sprite3.scale.set(1,2,1);
+        sprite3.position.set(0,1,1); //位置を指定
+        scene.add(sprite3);
         
         update();
 
