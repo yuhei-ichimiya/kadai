@@ -6,8 +6,7 @@
   </head>
 <body>
  <h1>板ポリにテクスチャ―</h1>
- 板ポリに<br>
- 非透過と透過
+ 空間座標、板ポリについて理解し、配置をふやした<br>
  <script>
       // ページの読み込みを待つ
       window.addEventListener('DOMContentLoaded', init);
@@ -55,7 +54,7 @@
 
         // 木をスプライトで作成
         var textureLoader = new THREE.TextureLoader();  
-        var texture = textureLoader.load("gazou1.png");
+        var texture = textureLoader.load("gazou1.jpg");
         const material = new THREE.SpriteMaterial({ map: texture,});
 
         // 木左
